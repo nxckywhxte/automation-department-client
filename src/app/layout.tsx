@@ -9,11 +9,7 @@ export const metadata = {
   description: 'Веб приложение специально для кафедры Автоматизации и ИТ'
 }
 
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode
-}) {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang='ru'>
       <body className={inter.className}>
@@ -22,3 +18,5 @@ export default function RootLayout({
     </html>
   )
 }
+
+export default RootLayout
