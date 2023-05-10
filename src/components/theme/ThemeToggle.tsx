@@ -1,8 +1,13 @@
 'use client'
 
-import { useCallback, useEffect, useState } from 'react'
+import {
+  useCallback,
+  useEffect,
+  useState
+} from 'react'
 import { useTheme } from 'next-themes'
-import { MoonIcon, SunIcon } from '@heroicons/react/24/outline'
+import { SunIcon } from '@heroicons/react/24/outline'
+import { MoonIcon } from '@heroicons/react/24/solid'
 
 export const ThemeToggle = () => {
   const [mounted, setMounted] = useState(false)
@@ -26,14 +31,22 @@ export const ThemeToggle = () => {
 
   return (
     <button
-      className='p-1 rounded-full border-2 dark:border-gray-100 border-gray-900'
+      className='
+        p-1 rounded-md border-2
+        dark:border-drForeground
+        border-drBackground
+        dark:hover:text-drGreen
+        dark:hover:border-drGreen
+        hover:text-drComment
+        hover:border-drComment
+        '
       onClick={() => {
         toggleTheme()
       }}>
       {theme === 'dark' ? (
-        <SunIcon className='w-6 h-6' />
+        <SunIcon className='w-5 h-5' />
       ) : (
-        <MoonIcon className='w-6 h-6' />
+        <MoonIcon className='w-5 h-5' />
       )}
     </button>
   )

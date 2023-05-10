@@ -5,6 +5,6 @@
 
 @layer base {
     body {
-        @apply dark:bg-gray-900 dark:text-gray-100 text-gray-900 bg-gray-100;
+        @apply dark:bg-drBackground dark:text-drForeground text-drBackground bg-drForeground/10;
     }
 }
