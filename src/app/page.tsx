@@ -73,7 +73,7 @@ const HomePage = () => {
                   )
                 )}
               </ul>
-              <div className='flex flex-col sm:flex-row w-full items-center justify-center mt-14 gap-4'>
+              <div className='flex flex-col sm:flex-row w-full items-center justify-center sm:mt-14 mt-7 gap-4'>
                 <button
                   className='
                     dark:bg-drGreen
