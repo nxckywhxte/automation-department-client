@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import GlobalThemeProvider from '@/components/providers/GlobalThemeProvider'
 
 const inter = Inter({ subsets: ['cyrillic'] })
 
@@ -15,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='ru'>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <GlobalThemeProvider>{children}</GlobalThemeProvider>
+      </body>
     </html>
   )
 }
