@@ -84,9 +84,6 @@ const HomePage = () => {
                     dark:text-drCurrentLine
                     text-drForeground
                     font-semibold
-                    border-none
-                    border-0
-                    outline-0
                     '>
                   Авторизация
                 </button>
@@ -98,9 +95,6 @@ const HomePage = () => {
                     rounded-md
                     text-drForeground
                     font-semibold
-                    border-none
-                    border-0
-                    outline-0
                     '>
                   Служба поддержки
                 </button>
